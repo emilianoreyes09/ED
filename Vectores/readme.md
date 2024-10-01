@@ -24,3 +24,5 @@ _italica_
   imprime(v1);
   imprime(v2)
 ```
+
+![Imagen](https://www.godaddy.com/resources/latam/wp-content/uploads/programacionc.webp)
