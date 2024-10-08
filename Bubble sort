@@ -1,4 +1,4 @@
-"c++ 
+c++``` 
 #include <iostream>
 #include <vector>
 #include <random>
@@ -61,6 +61,7 @@ void burbuja(vector<double>& v)
     double temp = 0;
     bool swapp = true;
 
+
     while (swapp)
     {
         swapp = false;
@@ -87,4 +88,4 @@ void imprime(vector<double> v)
     system("pause");
     system("cls");
 }
-//
+```
