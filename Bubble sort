@@ -1,4 +1,4 @@
-//
+"c++ 
 #include <iostream>
 #include <vector>
 #include <random>
@@ -55,7 +55,7 @@ void seleccion(vector<double>& v)
         v[i] = temp;
     }
 }
-
+"
 void burbuja(vector<double>& v)
 {
     double temp = 0;
