@@ -1,0 +1,43 @@
+c++ ```
+// 1.Realice el programa en C++ que solicite un número e imprima el numero multiplicado
+//por 10 y esto lo seguirá haciendo hasta que el usuario ingrese un cero.Utilice el
+//arreglo preconstruido.
+
+
+#include <iostream>
+
+int main() {
+    const int MAX_NUMBERS = 100; // Tamaño del arreglo preconstruido
+    int resultados[MAX_NUMBERS]; // Arreglo para almacenar los resultados
+    int numero;
+    int contador = 0;
+
+    // Solicitar números hasta que se ingrese un cero
+    while (true) {
+        std::cout << "Ingresa un número (0 para terminar): ";
+        std::cin >> numero;
+
+        if (numero == 0) {
+            break; // Salir si se ingresa 0
+        }
+
+        // Multiplicar el número por 10
+        int resultado = numero * 10;
+        resultados[contador] = resultado; // Almacenar el resultado en el arreglo
+        contador++;
+
+        // Verificar que no se exceda el tamaño del arreglo
+        if (contador >= MAX_NUMBERS) {
+            std::cout << "Se ha alcanzado el límite de entradas." << std::endl;
+            break;
+        }
+    }
+
+    // Imprimir los resultados almacenados
+    std::cout << "Resultados:" << std::endl;
+    for (int i = 0; i < contador; i++) {
+        std::cout << "Resultado " << i + 1 << ": " << resultados[i] << std::endl;
+    }
+
+}
+```
